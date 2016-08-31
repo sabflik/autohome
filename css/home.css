@@ -1,5 +1,8 @@
 body {background-color: #1a001a;}
+* { border-radius: 0 !important; }
 ul{list-style-type: none;}
+li {color: white;}
+a {text-decoration: none !important;}
 
 #navigation,.navbar .navbar-default{
 	height: 150px;
@@ -54,3 +57,34 @@ ul{list-style-type: none;}
 
 #intercom {background-color:#45A989;}
 #intercom:hover {background-color:#1a001a;}
+
+#heading {
+	margin-left: 9%;
+	margin-top: -20px;
+	color: white;
+	border-top:1px solid white;
+	max-width: 75%;
+	overflow: hidden;
+	font-family: verdana;
+}
+
+#content {
+	margin-left: 220px;
+	height: 100%;
+	min-height: 560px;
+	max-width: 80%; 
+	overflow: hidden;
+}
+
+#floor-plan {
+	max-width:70%;
+	float:left;
+	margin-left:3%;
+}
+
+#room-list {margin-left:75%;}
+
+.media-body > ul {
+	margin: 0; 
+    padding: 0;
+}
