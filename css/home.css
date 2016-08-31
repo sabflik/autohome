@@ -1,0 +1,11 @@
+body {
+	background-color: #1a001a;
+}
+
+#navigation,.navbar .navbar-default{
+	height: 150px;
+	border: 2px transparent;
+	background-image: url('../images/background.jpg');
+	background-size: 100%;
+	padding-top: 20px;
+}
