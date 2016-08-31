@@ -1,6 +1,5 @@
-body {
-	background-color: #1a001a;
-}
+body {background-color: #1a001a;}
+ul{list-style-type: none;}
 
 #navigation,.navbar .navbar-default{
 	height: 150px;
@@ -9,3 +8,49 @@ body {
 	background-size: 100%;
 	padding-top: 20px;
 }
+
+#side-menu {
+  position: fixed;
+  border-width: 0;
+  z-index: 1030;
+  min-height: 100%;
+  min-width: 220px;
+  max-width: 220px;
+  margin-left: 0px;
+  margin-top: -20px;
+  border: 0px solid transparent;
+}
+
+.media-heading {
+	padding-top: 5px;
+	font-size: 90%;
+	color: white;
+	font-family: verdana;
+}
+
+#side-menu > ul > li > a > .media {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+}
+
+#home {background-color:#003846;}
+#home:hover {background-color:#1a001a;}
+
+#doorsNwindows {background-color:#588BA4;}
+#doorsNwindows:hover {background-color:#1a001a}
+
+#lights {background-color:#7764A2;}
+#lights:hover {background-color:#1a001a;}
+
+#security {background-color:#B2A7D0;}
+#security:hover {background-color:#1a001a;}
+
+#air-con {background-color:#0f4371;}
+#air-con:hover {background-color:#1a001a;}
+
+#appliances {background-color:#008599;}
+#appliances:hover {background-color:#1a001a;}
+
+#intercom {background-color:#45A989;}
+#intercom:hover {background-color:#1a001a;}
