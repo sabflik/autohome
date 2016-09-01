@@ -1,0 +1,105 @@
+body {	background-color: #1a001a;}
+* { border-radius: 0 !important; }
+ul{list-style-type: none;}
+li {color: white;}
+a {text-decoration: none !important;}
+
+.glyphicon {font-size: 1.3em;color:white;}
+.badge {background-color:#ff4d4d;}
+.btn-success { background-color: #1a001a !important;}
+.btn-danger { background-color: #1a001a !important;}
+
+#side-menu {
+  position: fixed;
+  border-width: 0;
+  z-index: 1030;
+  min-height: 100%;
+  min-width: 220px;
+  max-width: 220px;
+  margin-left: 0px;
+  margin-top: -20px;
+  border: 0px solid transparent;
+}
+
+.media-heading {
+	padding-top: 5px;
+	font-size: 90%;
+	color: white;
+	font-family: verdana;
+}
+
+#navigation,.navbar .navbar-default{
+	height: 150px;
+	border: 2px transparent;
+	background-image: url('../images/background.jpg');
+	background-size: 100%;
+	padding-top: 20px;
+}
+
+#side-menu > ul > li > a > .media {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+}
+
+#home {background-color:#003846;}
+#home:hover {background-color:#1a001a;}
+
+#doorsNwindows {background-color:#588BA4;}
+#doorsNwindows:hover {background-color:#1a001a}
+
+#lights {background-color:#7764A2;}
+#lights:hover {background-color:#1a001a;}
+
+#security {background-color:#B2A7D0;}
+#security:hover {background-color:#1a001a;}
+
+#air-con {background-color:#0f4371;}
+#air-con:hover {background-color:#1a001a;}
+
+#appliances {background-color:#008599;}
+#appliances:hover {background-color:#1a001a;}
+
+#intercom {background-color:#45A989;}
+#intercom:hover {background-color:#1a001a;}
+
+#heading {
+	margin-left: 9%;
+	margin-top: -20px;
+	color: white;
+	border-top:1px solid white;
+	max-width: 75%;
+	overflow: hidden;
+	font-family: verdana;
+}
+
+#content {
+	margin-left: 220px;
+	height: 100%;
+	min-height: 560px;
+	max-width: 80%; 
+	overflow: hidden;
+}
+
+#floor-plan {
+	max-width:70%;
+	float:left;
+	margin-left:3%;
+	position:relative;
+}
+
+#room-list {
+	margin-left:69%;
+	width:500px;
+}
+
+#room-list > ul > li > div {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	width: 500px;
+}
+
+#room-list > ul > li:hover{
+	background-color: #003846;
+}

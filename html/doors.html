@@ -1,145 +1,335 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <title>MyAutoHome | Doors & Windows</title>
-  <!--Boostrap's CSS-->
-  <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <!--Custom CSS-->
-  <link rel="stylesheet" type="text/css" href="../css/home.css">
-  <!--Boostrap's Javascript-->
-  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <!--Custom Javascript-->
-  <!--<script src="../js/basics.js" type="text/javascript"></script>-->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>MyAutoHome | Doors & Windows</title>
+	<!--Boostrap's CSS-->
+	<link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<!--Custom CSS-->
+	<link rel="stylesheet" type="text/css" href="../css/doors.css">
+	<!--Boostrap's Javascript-->
+	<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<!--JQuery-->
+	<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<!-- Toggle Buttons -->
+	<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+	<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+	<!--Toggle Buttons-->
+	<script type="text/javascript">
+		function toggleFunction(button) {
+    		$('#'+button).bootstrapToggle('toggle')
+		}
+	</script>
+	<!--Custom Javascript-->
+	<!--<script src="../js/basics.js" type="text/javascript"></script>-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 
-  <!--Top Nav bar-->
-  <nav class="navbar navbar-default " id="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <h3 class="navbar-text" style="color:white;font-size: 40px;font-family: verdana;font-weight: 100">MyAutoHome</h3>
-        <a class="navbar-brand" href="../index.html">
-          <img class="img-responsive" alt="Brand" src="../images/Logo.png" width="40" height="40">
-  	    </a>
-  	  </div>
-	  </div>	
+	<!--Top Nav bar-->
+	<nav class="navbar navbar-default " id="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<h3 class="navbar-text" style="color:white;font-size: 40px;font-family: verdana;font-weight: 100">MyAutoHome</h3>
+				<a class="navbar-brand" href="../index.html">
+					<img class="img-responsive" alt="Brand" src="../images/Logo.png" width="40" height="40">
+				</a>
+			</div>
+		</div>
 	</nav>
 
-  <!--Overall container-->
-  <div class="container">
+	<!--Overall container-->
+	<div class="container">
 
-    <!--Side Menu-->
-	  <div id="side-menu">
-	    <ul>
-		    <li id="home">
-			    <a href="../index.html">
-				    <div class="media">
-					    <div class="media-left media-middle">
-						    <img class="media-object" alt="Brand" src="../images/Home.png" width="30" height="30">
-						  </div>
-						  <div class="media-body">
-							  <h5 class="media-heading">Home</h5>
-						  </div>
-					  </div>
-				  </a>
-			  </li>
-			  <li id="doorsNwindows">
-				  <a href="../html/doors.html">
-					  <div class="media">
-						  <div class="media-left media-middle">
-							  <img class="media-object" alt="Brand" src="../images/DnW.png" width="30" height="30">
-						  </div>
-						  <div class="media-body">
-							  <h5 class="media-heading">Doors &amp; Windows</h5>
-						  </div>
-					  </div>
-				  </a>
-			  </li>
-			  <li id="lights">
-				  <a>
-					  <div class="media">
-						  <div class="media-left media-middle">	
-							  <img class="media-object" alt="Brand" src="../images/Lights.png" width="30" height="30">
-						  </div>
-						  <div class="media-body">
-							  <h5 class="media-heading">Lights</h5>
-						  </div>
-					  </div>
-				  </a>
-			  </li>
-			  <li id="security">
-				  <a href="../html/security.html">
-					  <div class="media">
-						  <div class="media-left media-middle">	
-							  <img class="media-object" alt="Brand" src="../images/Security.png" width="30" height="30">
-						  </div>
-						  <div class="media-body">
-							  <h5 class="media-heading">Security</h5>
-						  </div>
-					  </div>
-				  </a>
-			  </li>
-			  <li id="air-con">
-				  <a>
-					  <div class="media">
-						  <div class="media-left media-middle">	
-							  <img class="media-object" alt="Brand" src="../images/AirCon.png" width="30" height="30">
-						  </div>
-						  <div class="media-body">
-							  <h5 class="media-heading">Air-Conditioning</h5>
-						  </div>
-					  </div>
-				  </a>
-			  </li>
-			  <li id="appliances">
-				  <a>
-					  <div class="media">
-						  <div class="media-left media-middle">			
-							  <img class="media-object" alt="Brand" src="../images/Appliances.png" width="30" height="30">
-						  </div>
-						  <div class="media-body">
-							  <h5 class="media-heading">Appliances</h5>
-						  </div>
-					  </div>
-				  </a>
-			  </li>
-			  <li id="intercom">
-				  <a>
-					  <div class="media">
-						  <div class="media-left media-middle">	
-							  <img class="media-object" alt="Brand" src="../images/Intercom.png" width="30" height="30">	
-						  </div>
-						  <div class="media-body">
-							  <h5 class="media-heading">Intercom</h5>
-						  </div>
-					  </div>
-				  </a>
-			  </li>
-		  </ul>
-	  </div>
+		<!--Side Menu-->
+		<div id="side-menu">
+			<ul>
+				<li id="home">
+					<a href="../index.html">
+						<div class="media">
+							<div class="media-left media-middle">
+								<img class="media-object" alt="Brand" src="../images/Home.png" width="30" height="30">
+							</div>
+							<div class="media-body">
+								<h5 class="media-heading">Home</h5>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li id="doorsNwindows">
+					<a href="../html/doors.html">
+						<div class="media">
+							<div class="media-left media-middle">
+								<img class="media-object" alt="Brand" src="../images/DnW.png" width="30" height="30">
+							</div>
+							<div class="media-body">
+								<h5 class="media-heading">Doors &amp; Windows</h5>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li id="lights">
+					<a>
+						<div class="media">
+							<div class="media-left media-middle">
+								<img class="media-object" alt="Brand" src="../images/Lights.png" width="30" height="30">
+							</div>
+							<div class="media-body">
+								<h5 class="media-heading">Lights</h5>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li id="security">
+					<a href="../html/security.html">
+						<div class="media">
+							<div class="media-left media-middle">
+								<img class="media-object" alt="Brand" src="../images/Security.png" width="30" height="30">
+							</div>
+							<div class="media-body">
+								<h5 class="media-heading">Security</h5>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li id="air-con">
+					<a>
+						<div class="media">
+							<div class="media-left media-middle">
+								<img class="media-object" alt="Brand" src="../images/AirCon.png" width="30" height="30">
+							</div>
+							<div class="media-body">
+								<h5 class="media-heading">Air-Conditioning</h5>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li id="appliances">
+					<a>
+						<div class="media">
+							<div class="media-left media-middle">
+								<img class="media-object" alt="Brand" src="../images/Appliances.png" width="30" height="30">
+							</div>
+							<div class="media-body">
+								<h5 class="media-heading">Appliances</h5>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li id="intercom">
+					<a>
+						<div class="media">
+							<div class="media-left media-middle">
+								<img class="media-object" alt="Brand" src="../images/Intercom.png" width="30" height="30">
+							</div>
+							<div class="media-body">
+								<h5 class="media-heading">Intercom</h5>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
 
-    <!--Heading-->
-    <div class="container" style="margin-left: 175px"><h4 id="heading">DOORS &amp; WINDOWS</h4></div><br>
-
-
-    <div id="content" class="container">
-
-	 	  <div id="floor-plan" class="container">
-		 	  <img class="img-responsive" alt="Floor Plan" src="../images/FloorPlanDoors.png" width="700" height="500">
-		  </div>
-
-		  <div id="room-list" class="container">
-              
-          </div>
-    </div>
+		<!--Heading-->
+		<div class="container" style="margin-left: 175px">
+			<h4 id="heading">DOORS &amp; WINDOWS</h4>
+		</div><br>
 
 
+		<div id="content" class="container">
+
+			<div id="floor-plan" class="container">
+				<img class="img-responsive" alt="Floor Plan" src="../images/FloorPlanDoors.png" width="700" height="500">
+			</div>
+
+			<div id="room-list" class="container">
+				<ul>
+					<li>
+						<div style="border-bottom:1px solid white;">DOORS</div>
+					</li>
+					<li>
+						<div class="media">
+							<div class="media-left media-middle">
+								<input id="1" type="checkbox" data-toggle="toggle" data-on="<img class='img-responsive' src='../images/Unlocked.png' alt='Floor Plan' width='20' height='20'>"
+									data-off="<img class='img-responsive' src='../images/Locked.png' alt='Floor Plan' width='20' height='20'>" data-style="rectangular"
+									data-onstyle="danger" data-offstyle="success">
+							</div>
+							<div class="media-body">
+								<a href="javascript:void(0)" onclick="toggleFunction(1)">
+									<h5 class="media-heading">Entry</h5>
+								</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="media">
+							<div class="media-left media-middle">
+								<input id="2" type="checkbox" data-toggle="toggle" data-on="<img class='img-responsive' src='../images/Unlocked.png' alt='Floor Plan' width='20' height='20'>"
+									data-off="<img class='img-responsive' src='../images/Locked.png' alt='Floor Plan' width='20' height='20'>" data-style="rectangular"
+									data-onstyle="danger" data-offstyle="success">
+							</div>
+							<div class="media-body">
+								<a href="javascript:void(0)" onclick="toggleFunction(2)">
+									<h5 class="media-heading">Garage</h5>
+								</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="media">
+							<div class="media-left media-middle">
+								<input id="3" type="checkbox" data-toggle="toggle" data-on="<img class='img-responsive' src='../images/Unlocked.png' alt='Floor Plan' width='20' height='20'>"
+									data-off="<img class='img-responsive' src='../images/Locked.png' alt='Floor Plan' width='20' height='20'>" data-style="rectangular"
+									data-onstyle="danger" data-offstyle="success">
+							</div>
+							<div class="media-body">
+								<a href="javascript:void(0)" onclick="toggleFunction(3)">
+									<h5 class="media-heading">Living Room</h5>
+								</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div style="border-bottom:1px solid white;">WINDOWS</div>
+					</li>
+					<li>
+						<div class="media">
+							<div class="media-left media-middle">
+								<input id="4" type="checkbox" data-toggle="toggle" data-on="<img class='img-responsive' src='../images/Opened.png' alt='Floor Plan' width='20' height='20'>"
+									data-off="<img class='img-responsive' src='../images/Closed.png' alt='Floor Plan' width='20' height='20'>" data-style="rectangular"
+									data-onstyle="danger" data-offstyle="success">
+							</div>
+							<div class="media-body">
+								<a href="javascript:void(0)" onclick="toggleFunction(4)">
+									<h5 class="media-heading">Bathroom</h5>
+								</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="media">
+							<div class="media-left media-middle">
+								<input id="5" type="checkbox" data-toggle="toggle" data-on="<img class='img-responsive' src='../images/Opened.png' alt='Floor Plan' width='20' height='20'>"
+									data-off="<img class='img-responsive' src='../images/Closed.png' alt='Floor Plan' width='20' height='20'>" data-style="rectangular"
+									data-onstyle="danger" data-offstyle="success">
+							</div>
+							<div class="media-body">
+								<a href="javascript:void(0)" onclick="toggleFunction(5)">
+									<h5 class="media-heading">Bedroom 1</h5>
+								</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="media">
+							<div class="media-left media-middle">
+								<input id="6" type="checkbox" data-toggle="toggle" data-on="<img class='img-responsive' src='../images/Opened.png' alt='Floor Plan' width='20' height='20'>"
+									data-off="<img class='img-responsive' src='../images/Closed.png' alt='Floor Plan' width='20' height='20'>" data-style="rectangular"
+									data-onstyle="danger" data-offstyle="success">
+							</div>
+							<div class="media-body">
+								<a href="javascript:void(0)" onclick="toggleFunction(6)">
+									<h5 class="media-heading">Bedroom 2</h5>
+								</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="media">
+							<div class="media-left media-middle">
+								<input id="7" type="checkbox" data-toggle="toggle" data-on="<img class='img-responsive' src='../images/Opened.png' alt='Floor Plan' width='20' height='20'>"
+									data-off="<img class='img-responsive' src='../images/Closed.png' alt='Floor Plan' width='20' height='20'>" data-style="rectangular"
+									data-onstyle="danger" data-offstyle="success">
+							</div>
+							<div class="media-body">
+								<a href="javascript:void(0)" onclick="toggleFunction(7)">
+									<h5 class="media-heading">Dining Room</h5>
+								</a>
+							</div>
+						</div>
+						<li>
+							<div class="media">
+								<div class="media-left media-middle">
+									<input id="9" type="checkbox" data-toggle="toggle" data-on="<img class='img-responsive' src='../images/Opened.png' alt='Floor Plan' width='20' height='20'>"
+										data-off="<img class='img-responsive' src='../images/Closed.png' alt='Floor Plan' width='20' height='20'>" data-style="rectangular"
+										data-onstyle="danger" data-offstyle="success">
+								</div>
+								<div class="media-body">
+									<a href="javascript:void(0)" onclick="toggleFunction(9)">
+										<h5 class="media-heading">Kitchen East</h5>
+									</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="media">
+								<div class="media-left media-middle">
+									<input id="9" type="checkbox" data-toggle="toggle" data-on="<img class='img-responsive' src='../images/Opened.png' alt='Floor Plan' width='20' height='20'>"
+										data-off="<img class='img-responsive' src='../images/Closed.png' alt='Floor Plan' width='20' height='20'>" data-style="rectangular"
+										data-onstyle="danger" data-offstyle="success">
+								</div>
+								<div class="media-body">
+									<a href="javascript:void(0)" onclick="toggleFunction(9)">
+										<h5 class="media-heading">Kitchen North</h5>
+									</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="media">
+								<div class="media-left media-middle">
+									<input id="10" type="checkbox" data-toggle="toggle" data-on="<img class='img-responsive' src='../images/Opened.png' alt='Floor Plan' width='20' height='20'>"
+										data-off="<img class='img-responsive' src='../images/Closed.png' alt='Floor Plan' width='20' height='20'>" data-style="rectangular"
+										data-onstyle="danger" data-offstyle="success">
+								</div>
+								<div class="media-body">
+									<a href="javascript:void(0)" onclick="toggleFunction(10)">
+										<h5 class="media-heading">Master Bathroom</h5>
+									</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="media">
+								<div class="media-left media-middle">
+									<input id="11" type="checkbox" data-toggle="toggle" data-on="<img class='img-responsive' src='../images/Opened.png' alt='Floor Plan' width='20' height='20'>"
+										data-off="<img class='img-responsive' src='../images/Closed.png' alt='Floor Plan' width='20' height='20'>" data-style="rectangular"
+										data-onstyle="danger" data-offstyle="success">
+								</div>
+								<div class="media-body">
+									<a href="javascript:void(0)" onclick="toggleFunction(11)">
+										<h5 class="media-heading">Master Bedroom North</h5>
+									</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="media">
+								<div class="media-left media-middle">
+									<input id="12" type="checkbox" data-toggle="toggle" data-on="<img class='img-responsive' src='../images/Opened.png' alt='Floor Plan' width='20' height='20'>"
+										data-off="<img class='img-responsive' src='../images/Closed.png' alt='Floor Plan' width='20' height='20'>" data-style="rectangular"
+										data-onstyle="danger" data-offstyle="success">
+								</div>
+								<div class="media-body">
+									<a href="javascript:void(0)" onclick="toggleFunction(12)">
+										<h5 class="media-heading">Master Bedroom West</h5>
+									</a>
+								</div>
+							</div>
+						</li>
+				</ul>
+			</div>
+		</div>
 
 
-  </div>
+
+
+	</div>
 
 </body>
+
 </html>
