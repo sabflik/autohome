@@ -1,7 +1,12 @@
 body { background-color: #1a001a;}
+* { border-radius: 0 !important; }
 ul{list-style-type: none;}
 li {color: white;}
 a {text-decoration: none !important;}
+
+.badge {background-color:#ff4d4d;}
+.btn-success { background-color: #1a001a !important;}
+.btn-danger { background-color: #1a001a !important;}
 
 #side-menu {
   position: fixed;
@@ -112,4 +117,23 @@ a {text-decoration: none !important;}
 .carousel-inner > .item > a > img {
     width: 70%;
     margin: auto;
+}
+
+.alert { 
+	position:fixed;
+    top:0px;
+    width:100%;
+    z-index:105;
+    text-align:center;
+    font-weight:normal;
+    font-size:14px;
+    font-weight:bold;
+}
+
+#danger span.dismiss {
+    border:2px solid #FFF;
+    padding:0 5px;
+    cursor:pointer;
+    float:right;
+    margin-right:10px;
 }

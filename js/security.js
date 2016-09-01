@@ -1,11 +1,11 @@
-function activeFunction() {
-    $(document).ready(function () {
-        $('#room-list ul li').click(function () {
-            $('#room-list ul li').removeClass("active");
-            $(this).addClass("active");
-        });
-    });
-}
+// function activeFunction() {
+// 	$(document).ready(function(){
+// 	$('#room-list ul li').click(function(){
+// 		$('#room-list ul li').removeClass("active");
+// 		$(this).addClass("active");
+// 		});
+// 	});
+// }
 // var roomList = $("#room-list")[0];
 // var rooms: NodeListOf<HTMLElement> = roomList.getElementsByTagName('li');
 // rooms[1].addEventListener("click", function () {
