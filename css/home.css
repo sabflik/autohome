@@ -1,16 +1,16 @@
-body {background-color: #1a001a;}
+body {
+	background-color: #1a001a;
+}
 * { border-radius: 0 !important; }
 ul{list-style-type: none;}
 li {color: white;}
-a {text-decoration: none !important;}
 
-#navigation,.navbar .navbar-default{
-	height: 150px;
-	border: 2px transparent;
-	background-image: url('../images/background.jpg');
-	background-size: 100%;
-	padding-top: 20px;
-}
+.glyphicon {font-size: 1.3em;color:white;}
+.glyphicon-ok {font-size: 1.3em;color:#45A989;}
+.glyphicon-remove {font-size: 1.3em;color:#ff4d4d;}
+.badge {background-color:#ff4d4d}
+.btn-success { background-color: #1a001a !important;}
+.btn-danger { background-color: #1a001a !important;}
 
 #side-menu {
   position: fixed;
@@ -29,6 +29,14 @@ a {text-decoration: none !important;}
 	font-size: 90%;
 	color: white;
 	font-family: verdana;
+}
+
+#navigation,.navbar .navbar-default{
+	height: 150px;
+	border: 2px transparent;
+	background-image: url('../images/background.jpg');
+	background-size: 100%;
+	padding-top: 20px;
 }
 
 #side-menu > ul > li > a > .media {
@@ -88,3 +96,15 @@ a {text-decoration: none !important;}
 	margin: 0; 
     padding: 0;
 }
+
+/*kwicks*/
+.kwicks {
+	width: 220px;
+	height: 500px;
+}
+.kwicks > li {margin-top: 5px;}
+
+.kwicks > li.kwicks-collapsed { background-color: #1a001a; }
+.kwicks > li.kwicks-expanded { background-color: #003846; }
+.kwicks > li.kwicks-selected { background-color: #003846; }
+.kwicks > li {background-color: #1a001a;}
