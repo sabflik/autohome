@@ -4,14 +4,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>MyAutoHome | Security</title>
+
+	<!--JQuery-->
+	<script src="../node_modules/jquery/dist/jquery.min.js"></script>
 	<!--Boostrap's CSS-->
 	<link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
 	<!--Custom CSS-->
-	<link rel="stylesheet" type="text/css" href="../css/home.css">
+	<link rel="stylesheet" type="text/css" href="../css/security.css">
 	<!--Boostrap's Javascript-->
 	<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 	<!--Custom Javascript-->
-	<script src="../js/basics.js" type="text/javascript"></script>
+	<script src="../js/security.js" type="text/javascript"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -154,11 +157,49 @@
 				</div>
 			</div>
 
-			<div id="room-list" class="container"></div>
+			<div id="room-list" class="container">
+				<ul>
+					<li>
+						<div style="border-bottom:1px solid white;">CAMERAS</div>
+					</li>
+					<li id="dining" data-target="#myCarousel" data-slide-to="0" class="active">
+						<a href="#" onclick="activeFunction()">
+							<div class="media">
+								<h5 class="media-heading">Dining Room</h5>
+							</div>
+						</a>
+					</li>
+					<li id="entry" data-target="#myCarousel" data-slide-to="1">
+						<a href="#" onclick="activeFunction()">
+							<div class="media">
+								<h5 class="media-heading">Entry</h5>
+							</div>
+						</a>
+					</li>
+					<li id="garage" data-target="#myCarousel" data-slide-to="2">
+						<a href="#" onclick="activeFunction()">
+							<div class="media">
+								<h5 class="media-heading">Garage</h5>
+							</div>
+						</a>
+					</li>
+					<li id="kitchen" data-target="#myCarousel" data-slide-to="3">
+						<a href="#" onclick="activeFunction()">
+							<div class="media">
+								<h5 class="media-heading">Kitchen</h5>
+							</div>
+						</a>
+					</li>
+					<li id="living" data-target="#myCarousel" data-slide-to="4">
+						<a href="#" onclick="activeFunction()">
+							<div class="media">
+								<h5 class="media-heading">Living Room</h5>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
-
-
-
 
 	</div>
 
