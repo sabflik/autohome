@@ -1,9 +1,8 @@
-body {
-	background-color: #1a001a;
-}
+body {background-color: #1a001a;}
 * { border-radius: 0 !important; }
 ul{list-style-type: none;}
 li {color: white;}
+a {text-decoration: none !important;}
 
 .glyphicon {font-size: 1.3em;color:white;}
 .glyphicon-ok {font-size: 1.3em;color:#45A989;}

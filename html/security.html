@@ -21,13 +21,12 @@
 	<!--<script src="../js/security.js" type="text/javascript"></script>-->
 
 	<script type="text/javascript">
-		function activeFunction() {
+		function activeFunction(room) {
 			$(document).ready(function(){
-				$('#room-list ul li').click(function(){
-					$('#room-list ul li').removeClass("active");
-					$(this).addClass("active");
-				});
+				$('#room-list ul li').removeClass("active");
+				$(document.getElementById(room)).addClass("active");
 			});
+			
 		}
 		$(function() {
     		$('#alarm').change(function() {
@@ -207,35 +206,35 @@
 						<div style="border-bottom:1px solid white;">CAMERAS</div>
 					</li>
 					<li id="dining" data-target="#myCarousel" data-slide-to="0" class="active">
-						<a href="#" onclick="activeFunction()">
+						<a href="javascript:void(0)" onclick="activeFunction('dining')">
 							<div class="media">
 								<h5 class="media-heading">Dining Room</h5>
 							</div>
 						</a>
 					</li>
 					<li id="entry" data-target="#myCarousel" data-slide-to="1">
-						<a href="#" onclick="activeFunction()">
+						<a href="javascript:void(0)" onclick="activeFunction('entry')">
 							<div class="media">
 								<h5 class="media-heading">Entry</h5>
 							</div>
 						</a>
 					</li>
 					<li id="garage" data-target="#myCarousel" data-slide-to="2">
-						<a href="#" onclick="activeFunction()">
+						<a href="javascript:void(0)" onclick="activeFunction('garage')">
 							<div class="media">
 								<h5 class="media-heading">Garage</h5>
 							</div>
 						</a>
 					</li>
 					<li id="kitchen" data-target="#myCarousel" data-slide-to="3">
-						<a href="#" onclick="activeFunction()">
+						<a href="javascript:void(0)" onclick="activeFunction('kitchen')">
 							<div class="media">
 								<h5 class="media-heading">Kitchen</h5>
 							</div>
 						</a>
 					</li>
 					<li id="living" data-target="#myCarousel" data-slide-to="4">
-						<a href="#" onclick="activeFunction()">
+						<a href="javascript:void(0)" onclick="activeFunction('living')">
 							<div class="media">
 								<h5 class="media-heading">Living Room</h5>
 							</div>
