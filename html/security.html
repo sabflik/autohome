@@ -18,30 +18,7 @@
 	<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
 	<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 	<!--Custom Javascript-->
-	<!--<script src="../js/security.js" type="text/javascript"></script>-->
-
-	<script type="text/javascript">
-		function activeFunction(room) {
-			$(document).ready(function(){
-				$('#room-list ul li').removeClass("active");
-				$(document.getElementById(room)).addClass("active");
-			});
-			
-		}
-		$(function() {
-    		$('#alarm').change(function() {
-    			if($(this).prop("checked") == true){
-    				$('#danger').fadeIn("slow")
-    				$('#danger').html('You have DISARMED the house!')
-					$("#danger").fadeOut(2500,'swing');
-   				}else{
-   					$('#success').fadeIn("slow")
-       				$('#success').html('You have ARMED the house!')
-					$("#success").fadeOut(2500,'swing');
-    			}
-    		})
-		})
-	</script>
+	<script src="../js/security.js" type="text/javascript"></script>
 </head>
 
 <body>
