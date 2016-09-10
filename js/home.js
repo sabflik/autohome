@@ -5,12 +5,11 @@ $(function () {
         isVertical: true
     });
 });
-var input = document.getElementById("#search-input");
 function searchFunction() {
-    var query = $(input).val();
+    var query = $("#search-input").val();
     var params = {
         // Request parameters
-        "q": "bill gates",
+        "q": query,
         "count": "5",
         "offset": "0",
         "mkt": "en-us",
